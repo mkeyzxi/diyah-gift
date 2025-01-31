@@ -1,0 +1,45 @@
+/* Colors */
+:root {
+  --pink: #BD085B;
+  --blackCustom: #1F1D1E;
+  --yellow: #FFC403;
+  --pinkSecondary: #FF6CAA;
+  --pinkBackground: #ff9bc5;
+  --peachPuff: #F9EAE5;
+}
+/* End Colors */
+
+/* Shadow Custom */
+.shadow-custom {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+/* End Shadow Custom
+
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* EndUniversal */
+
+.animate-righttoleft {
+  animation: rightToLeft 10s linear infinite alternate-reverse;
+}
+
+/* Animate */
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
+
+/* End Animate */
+
+/* Shadow */
+.shadow-salempang {
+  box-shadow: 0px -0px 33px var(--yellow);
+}
+/* End Shadow */
