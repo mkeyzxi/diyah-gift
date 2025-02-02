@@ -5,6 +5,7 @@
   --yellow: #FFC403;
   --pinkSecondary: #FF6CAA;
   --pinkBackground: #ff9bc5;
+  --pinkBackgroundOpacity: rgba(255, 105, 188, 0.45);
   --peachPuff: #F9EAE5;
 }
 /* End Colors */
@@ -16,10 +17,10 @@
 /* End Shadow Custom
 
 /* Universal */
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 /* EndUniversal */
 
 .animate-righttoleft {
