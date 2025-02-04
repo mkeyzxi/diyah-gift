@@ -18,6 +18,7 @@ const SalempangLayout = () => {
         window.addEventListener('resize', updateTriangle);
         return () => window.removeEventListener('resize', updateTriangle);
     }, []);
+	
 	return (
 		<div className="w-full h-12 bg-[var(--yellow)] overflow-x-hidden border-t-5 border-[var(--blackCustom)] shadow-salempang">
 			<div className="flex animate-righttoleft border-[var(--blackCustom)] ">

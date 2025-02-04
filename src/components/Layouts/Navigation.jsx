@@ -1,30 +1,3 @@
-// // import React from 'react'
-// import logo from '../../assets/logo.png'
-// import { Link } from 'react-router'
-// import IconModeNav from '../UI/IconModeNav'
-// import IconBasketNav from '../UI/IconBasketNav'
-// export default function Navigation() {
-// 	return (
-// 		<div className="bg-[peachPuff] flex justify-around items-center fixed top-0 right-0 left-0">
-// 			<div className="w-24"><img src={logo} alt="logo diyah" width="100%" height="100%" /></div>
-// 			<div>
-// 				<ul className="flex justify-center items-center md:gap-10 gap-5">
-// 					<li className='!p-1 group'><Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Beranda</Link></li>
-// 					<li className='!p-1 group'><Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Galeri</Link></li>
-// 					<li className='!p-1 group'><Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Kontak</Link></li>
-// 				</ul>
-// 			</div>
-// 			<div>
-// 			<ul className="flex justify-center items-center md:gap-10 gap-5">
-// 					<div className='bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group'><IconModeNav /></div>
-// 					<div className='bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group'><Link to="/" ><IconBasketNav /></Link></div>
-// 				</ul>
-// 			</div>
-// 		</div>
-// 	)
-// }
-
-
 import { useState } from 'react';
 import logo from '../../assets/logo.png';
 import { Link } from 'react-router';

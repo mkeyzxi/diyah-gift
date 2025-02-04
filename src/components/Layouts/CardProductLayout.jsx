@@ -7,7 +7,7 @@ const CardProductLayout = ({judul, price, path}) => {
 				<div className="relative overflow-clip md:h-[150px] h-[130px] object-cover w-full flex items-start justify-center">
 					<img
 						src={path}
-						alt="Product image"
+						alt={`gambar produk ${judul}`}
 						className="object-contain w-full h-full"
 						width="100%"
 						height="100%"
