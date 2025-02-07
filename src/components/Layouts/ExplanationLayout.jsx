@@ -2,7 +2,7 @@ import Button from "../UI/Button";
 import PropTypes from 'prop-types';
 const Explanation = ({subExplanation, paragraphExplanation}) => {
   return (
-	<div className="flex flex-col items-start justify-center gap-4 " >
+	<div className="flex flex-col items-start justify-center gap-4 h-[300px] w-1/2" >
     <h3 className="md:text-2xl text-xl font-semibold">{subExplanation}</h3>
     {/* <h3 className="md:text-2xl text-xl font-semibold">MEMBERIKAN HADIAH YANG AKAN MENJADI KENANGAN</h3> */}
     <p>{paragraphExplanation}</p>

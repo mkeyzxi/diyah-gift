@@ -13,7 +13,7 @@ export default function Navigation() {
 
     return (
         <div className="bg-[peachPuff] md:justify-around flex justify-between items-center fixed top-0 right-0 left-0 !px-4 !py-1 shadow-md z-50">
-            <div className="w-24">
+            <div className="w-18">
                 <img src={logo} alt="logo diyah" width="100%" height="100%" />
             </div>
             
