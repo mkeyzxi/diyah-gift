@@ -38,10 +38,10 @@ export default function Navigation() {
                     <Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Beranda</Link>
                 </li>
                 <li className='!p-1 group text-center md:text-left'>
-                    <Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Galeri</Link>
+                    <Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/galeri">Galeri</Link>
                 </li>
                 <li className='!p-1 group text-center md:text-left'>
-                    <Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/">Kontak</Link>
+                    <Link className="!font-normal text-md group-hover:border-b-2 !text-[var(--blackCustom)] border-[var(--pink)] group-active:text-[var(--pink)]" to="/kontak">Kontak</Link>
                 </li>
             </ul>
             
