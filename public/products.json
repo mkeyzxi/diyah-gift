@@ -19,19 +19,115 @@
 	],
 	"selempang": [
 		{
-			"title": "Produk 1",
+			"title": "Selempang Samping",
 			"price": 12000,
 			"path_img": "images/sda.png",
 			"like": false,
-			"message": "Produk 1",
+			"message": "Selempang Samping",
 			"type": "selempang"
 		},
 		{
-			"title": "Produk 2",
+			"title": "Salempang Dua Sisi",
 			"price": 12000,
 			"path_img": "images/sda.png",
 			"like": false,
-			"message": "Produk 2",
+			"message": "Salempang Dua Sisi",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Samping ( Satu Sisi ) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Samping ( Satu Sisi ) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Pita + Rumbai",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi + Pita + Rumbai",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi (Kain Satin)",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi (Kain Satin)",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Duta Guru dan Siswa",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Duta Guru dan Siswa",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping (Satu Sisi) + Pita",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Samping (Satu Sisi) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Rumbai",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi + Rumbai",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping Satu Sisi",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Samping Satu Sisi",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping ( Satu Sisi) + Pita",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Samping ( Satu Sisi) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Pita + Tassel",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi + Pita + Tassel",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Rumbai",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Selempang Dua Sisi + Rumbai",
 			"type": "selempang"
 		}
 	],

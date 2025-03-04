@@ -1,36 +1,18 @@
-import { useState, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
 import FormWhatsapp from '../components/Forms/FormWhatsapp';
 import FormGmail from '../components/Forms/FormGmail';
-import Button from '../components/UI/Button';
 
 const KontakPage = () => {
-	const [titleHeaderState, setTitleHeaderState] = useState('Whatsapp');
-	const namaRef = useRef(null);
-	const gmailRef = useRef(null);
-	const pesanRef = useRef(null);
+	const [titleHeaderState, setTitleHeaderState] = useState(() => {
+		// Ambil nilai terakhir dari localStorage atau default ke 'Whatsapp'
+		return localStorage.getItem('selectedForm') || 'Whatsapp';
+	});
 
-	const handleSubmit = () => {
-		const nama = namaRef.current.value;
-		const pesan = pesanRef.current.value;
-		const gmail = titleHeaderState === 'Email' ? gmailRef.current.value : null;
-
-		if (!nama || !pesan || (titleHeaderState === 'Email' && !gmail)) {
-			alert('Mohon lengkapi semua form');
-			return;
-		}
-
-		if (titleHeaderState === 'Whatsapp') {
-			const message = `Halo, saya ${nama}. ${pesan}`;
-			const whatsappUrl = `https://wa.me/6285342181132?text=${encodeURIComponent(message)}`;
-			window.open(whatsappUrl, '_blank');
-		} else {
-			const mailtoLink = `mailto:muhmakbul6@gmail.com?subject=Pesan dari ${nama}&body=${encodeURIComponent(
-				`Nama: ${nama}\nEmail: ${gmail}\nPesan: ${pesan}`
-			)}`;
-			window.location.href = mailtoLink;
-		}
-	};
+	// Simpan pilihan ke localStorage setiap kali berubah
+	useEffect(() => {
+		localStorage.setItem('selectedForm', titleHeaderState);
+	}, [titleHeaderState]);
 
 	return (
 		<div className="container mx-auto justify-center items-center space-y-16 md:space-y-10 px-2 md:px-20 mt-20 h-screen">
@@ -45,7 +27,9 @@ const KontakPage = () => {
 						Whatsapp
 					</span>
 					<span
-						className="text-[var(--pinkSecondary)] cursor-pointer"
+						className={`text-[var(--pinkSecondary)] cursor-pointer ${
+							titleHeaderState === 'Email' ? '!text-green-400' : ''
+						}`}
 						onClick={() => setTitleHeaderState('Email')}
 					>
 						Email
@@ -65,14 +49,7 @@ const KontakPage = () => {
 				</div>
 
 				<div className="w-full">
-					{titleHeaderState === 'Whatsapp' ? (
-						<FormWhatsapp refs={{ namaRef, pesanRef }} />
-					) : (
-						<FormGmail refs={{ namaRef, gmailRef, pesanRef }} />
-					)}
-					<div className="w-[100px] mx-auto">
-						<Button label="Kirim" onClick={handleSubmit} />
-					</div>
+					{titleHeaderState === 'Whatsapp' ? <FormWhatsapp /> : <FormGmail />}
 				</div>
 			</div>
 		</div>
