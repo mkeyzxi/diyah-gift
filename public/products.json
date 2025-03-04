@@ -1,0 +1,56 @@
+{
+	"buket": [
+		{
+			"title": "Produk 1",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 1",
+			"type": "selempang"
+		},
+		{
+			"title": "Produk 2",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 2",
+			"type": "selempang"
+		}
+	],
+	"selempang": [
+		{
+			"title": "Produk 1",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 1",
+			"type": "selempang"
+		},
+		{
+			"title": "Produk 2",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 2",
+			"type": "selempang"
+		}
+	],
+	"lainnya": [
+		{
+			"title": "Produk 1",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 1",
+			"type": "selempang"
+		},
+		{
+			"title": "Produk 2",
+			"price": 12000,
+			"path_img": "images/sda.png",
+			"like": false,
+			"message": "Produk 2",
+			"type": "selempang"
+		}
+	]
+}
