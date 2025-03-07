@@ -12,7 +12,7 @@ const GaleriPage = () => {
       <span className="text-[var(--pinkSecondary)] cursor-pointer" onClick={() => setTitleHeaderState('Buket')}>Buket</span>
       <span className="text-[var(--pinkSecondary)] cursor-pointer" onClick={() => setTitleHeaderState('Lainnya')}>Lainnya</span>
     </HeaderNavLayout>
-    <div className="flex flex-wrap gap-5 justify-center items-center">
+    <div className="flex flex-wrap gap-3 md:gap-5 justify-center items-center">
     <CardProductLayout path='../public/image/buket/ImageBuket10.webp' judul='Buket Doraemon' price='100.000'/>
     <CardProductLayout path='../public/image/buket/ImageBuket10.webp' judul='Buket Doraemon' price='100.000'/>
     <CardProductLayout path='../public/image/buket/ImageBuket10.webp' judul='Buket Doraemon' price='100.000'/>

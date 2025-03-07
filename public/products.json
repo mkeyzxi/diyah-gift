@@ -1,12 +1,12 @@
 {
-	"buket": [
+	"products": [
 		{
 			"title": "Produk 1",
 			"price": 12000,
 			"path_img": "images/sda.png",
 			"like": false,
 			"message": "Produk 1",
-			"type": "selempang"
+			"type": "buket"
 		},
 		{
 			"title": "Produk 2",
@@ -14,10 +14,8 @@
 			"path_img": "images/sda.png",
 			"like": false,
 			"message": "Produk 2",
-			"type": "selempang"
-		}
-	],
-	"selempang": [
+			"type": "buket"
+		},
 		{
 			"title": "Selempang Samping",
 			"price": 12000,
@@ -129,16 +127,14 @@
 			"like": false,
 			"message": "Selempang Dua Sisi + Rumbai",
 			"type": "selempang"
-		}
-	],
-	"lainnya": [
+		},
 		{
 			"title": "Produk 1",
 			"price": 12000,
 			"path_img": "images/sda.png",
 			"like": false,
 			"message": "Produk 1",
-			"type": "selempang"
+			"type": "lainnya"
 		},
 		{
 			"title": "Produk 2",
@@ -146,7 +142,7 @@
 			"path_img": "images/sda.png",
 			"like": false,
 			"message": "Produk 2",
-			"type": "selempang"
+			"type": "lainnya"
 		}
 	]
 }

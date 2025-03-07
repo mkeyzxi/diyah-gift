@@ -7,7 +7,7 @@ import GaleriPage from './pages/GaleriPage';
 import KontakPage from './pages/KontakPage';
 function App() {
 	return (
-		<div className='flex flex-col overflow-clip gap-10'>
+		<div className='flex flex-col overflow-clip gap-10 dark:bg-gray-800'>
 			<Navigation />
 			<Routes>
 				<Route path="/" element={<BerandaPage />} />

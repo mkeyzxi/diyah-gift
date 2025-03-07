@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const CardProductLayout = ({judul, price, path}) => {
 	return (
-		<div className="md:max-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
+		<div className="md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
 			<div className="p-0">
 				<div className="relative overflow-clip md:h-[150px] h-[130px] object-cover w-full flex items-start justify-center">
 					<img
