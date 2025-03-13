@@ -1,25 +1,217 @@
 {
 	"products": [
 		{
-			"title": "Produk 1",
+			"title": "imageBuket1",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/buket/ImageBuket1.webp",
 			"like": false,
-			"message": "Produk 1",
+			"message": "imageBuket1",
 			"type": "buket"
 		},
 		{
-			"title": "Produk 2",
+			"title": "imageBuket2",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/buket/ImageBuket2.webp",
 			"like": false,
-			"message": "Produk 2",
+			"message": "imageBuket2",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket3",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket3.webp",
+			"like": false,
+			"message": "imageBuket3",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket4",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket4.webp",
+			"like": false,
+			"message": "imageBuket4",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket5",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket5.webp",
+			"like": false,
+			"message": "imageBuket5",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket6",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket6.webp",
+			"like": false,
+			"message": "imageBuket6",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket7",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket7.webp",
+			"like": false,
+			"message": "imageBuket7",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket8",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket8.webp",
+			"like": false,
+			"message": "imageBuket8",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket9",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket9.webp",
+			"like": false,
+			"message": "imageBuket9",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket10",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket10.webp",
+			"like": false,
+			"message": "imageBuket10",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket11",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket11.webp",
+			"like": false,
+			"message": "imageBuket11",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket12",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket12.webp",
+			"like": false,
+			"message": "imageBuket12",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket13",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket13.webp",
+			"like": false,
+			"message": "imageBuket13",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket14",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket14.webp",
+			"like": false,
+			"message": "imageBuket14",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket15",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket15.webp",
+			"like": false,
+			"message": "imageBuket15",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket16",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket16.webp",
+			"like": false,
+			"message": "imageBuket16",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket17",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket17.webp",
+			"like": false,
+			"message": "imageBuket17",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket18",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket18.webp",
+			"like": false,
+			"message": "imageBuket18",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket19",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket19.webp",
+			"like": false,
+			"message": "imageBuket19",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket20",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket20.webp",
+			"like": false,
+			"message": "imageBuket20",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket21",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket21.webp",
+			"like": false,
+			"message": "imageBuket21",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket22",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket22.webp",
+			"like": false,
+			"message": "imageBuket22",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket23",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket23.webp",
+			"like": false,
+			"message": "imageBuket23",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket24",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket24.webp",
+			"like": false,
+			"message": "imageBuket24",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket25",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket25.webp",
+			"like": false,
+			"message": "imageBuket25",
+			"type": "buket"
+		},
+		{
+			"title": "imageBuket26",
+			"price": 12000,
+			"path_img": "/image/buket/ImageBuket26.webp",
+			"like": false,
+			"message": "imageBuket26",
 			"type": "buket"
 		},
 		{
 			"title": "Selempang Samping",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang9.webp",
 			"like": false,
 			"message": "Selempang Samping",
 			"type": "selempang"
@@ -27,7 +219,7 @@
 		{
 			"title": "Salempang Dua Sisi",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang6.webp",
 			"like": false,
 			"message": "Salempang Dua Sisi",
 			"type": "selempang"
@@ -35,15 +227,7 @@
 		{
 			"title": "Selempang Samping ( Satu Sisi ) + Pita",
 			"price": 12000,
-			"path_img": "images/sda.png",
-			"like": false,
-			"message": "Selempang Samping ( Satu Sisi ) + Pita",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Samping ( Satu Sisi ) + Pita",
-			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang5.webp",
 			"like": false,
 			"message": "Selempang Samping ( Satu Sisi ) + Pita",
 			"type": "selempang"
@@ -51,7 +235,7 @@
 		{
 			"title": "Selempang Dua Sisi + Pita + Rumbai",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang1.webp",
 			"like": false,
 			"message": "Selempang Dua Sisi + Pita + Rumbai",
 			"type": "selempang"
@@ -59,7 +243,7 @@
 		{
 			"title": "Selempang Dua Sisi (Kain Satin)",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang10.webp",
 			"like": false,
 			"message": "Selempang Dua Sisi (Kain Satin)",
 			"type": "selempang"
@@ -67,7 +251,7 @@
 		{
 			"title": "Selempang Duta Guru dan Siswa",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang3.webp",
 			"like": false,
 			"message": "Selempang Duta Guru dan Siswa",
 			"type": "selempang"
@@ -75,7 +259,7 @@
 		{
 			"title": "Selempang Samping (Satu Sisi) + Pita",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang2.webp",
 			"like": false,
 			"message": "Selempang Samping (Satu Sisi) + Pita",
 			"type": "selempang"
@@ -83,7 +267,7 @@
 		{
 			"title": "Selempang Dua Sisi + Rumbai",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang1.webp",
 			"like": false,
 			"message": "Selempang Dua Sisi + Rumbai",
 			"type": "selempang"
@@ -91,15 +275,15 @@
 		{
 			"title": "Selempang Samping Satu Sisi",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang4.webp",
 			"like": false,
 			"message": "Selempang Samping Satu Sisi",
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Samping ( Satu Sisi) + Pita",
+			"title": "Selempang Samping ( Satu Sisi ) + Pita",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang11.webp",
 			"like": false,
 			"message": "Selempang Samping ( Satu Sisi) + Pita",
 			"type": "selempang"
@@ -107,41 +291,89 @@
 		{
 			"title": "Selempang Dua Sisi",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "/image/selempang/Selempang6.webp",
 			"like": false,
 			"message": "Selempang Dua Sisi",
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Dua Sisi + Pita + Tassel",
+			"title": "lainnya",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "image/lainnya/lainnya.webp",
 			"like": false,
-			"message": "Selempang Dua Sisi + Pita + Tassel",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Dua Sisi + Rumbai",
-			"price": 12000,
-			"path_img": "images/sda.png",
-			"like": false,
-			"message": "Selempang Dua Sisi + Rumbai",
-			"type": "selempang"
-		},
-		{
-			"title": "Produk 1",
-			"price": 12000,
-			"path_img": "images/sda.png",
-			"like": false,
-			"message": "Produk 1",
+			"message": "lainnya",
 			"type": "lainnya"
 		},
 		{
-			"title": "Produk 2",
+			"title": "lainnya1",
 			"price": 12000,
-			"path_img": "images/sda.png",
+			"path_img": "image/lainnya/lainnya1.webp",
 			"like": false,
-			"message": "Produk 2",
+			"message": "lainnya1",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya2",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya2.webp",
+			"like": false,
+			"message": "lainnya2",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya3",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya3.webp",
+			"like": false,
+			"message": "lainnya3",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya4",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya4.webp",
+			"like": false,
+			"message": "lainnya4",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya5",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya5.webp",
+			"like": false,
+			"message": "lainnya5",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya6",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya6.webp",
+			"like": false,
+			"message": "lainnya6",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya7",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya7.webp",
+			"like": false,
+			"message": "lainnya7",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya8",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya8.webp",
+			"like": false,
+			"message": "lainnya8",
+			"type": "lainnya"
+		},
+		{
+			"title": "lainnya9",
+			"price": 12000,
+			"path_img": "image/lainnya/lainnya9.webp",
+			"like": false,
+			"message": "lainnya9",
 			"type": "lainnya"
 		}
 	]

@@ -1,13 +1,31 @@
+
 import PropTypes from 'prop-types';
 
-const CardProductLayout = ({judul, price, path}) => {
+const categoryColors = {
+	selempang: 'bg-[#BD085B]',
+	buket: 'bg-[#FFC403]', 
+	lainnya: 'bg-[#1F1D1E]',
+};
+
+const CardProductLayout = ({title, price, path, category}) => {
 	return (
-		<div className="md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
+		<div className="relative md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
+			{/* Badge Kategori */}
+			{category && (
+				<span
+					className={`absolute top-2 right-2 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${
+						categoryColors[category] || 'bg-gray-500'
+					}`}
+				>
+					{category}
+				</span>
+			)}
+
 			<div className="p-0">
 				<div className="relative overflow-clip md:h-[150px] h-[130px] object-cover w-full flex items-start justify-center">
 					<img
 						src={path}
-						alt={`gambar produk ${judul}`}
+						alt={`gambar produk ${title}`}
 						className="object-contain w-full h-full"
 						width="100%"
 						height="100%"
@@ -15,9 +33,9 @@ const CardProductLayout = ({judul, price, path}) => {
 				</div>
 
 				<div className="p-2 space-y-1">
-					<h3 className="font-reguler text-sm text-gray-900 line-clamp-2">
-						{judul}
-					</h3>
+				<h3 className="font-reguler text-sm text-gray-900 line-clamp-2 min-h-[40px]">
+    {title}
+</h3>
 					<hr className="mt-2" />
 
 					<div className="flex items-center justify-between">
@@ -67,9 +85,10 @@ const CardProductLayout = ({judul, price, path}) => {
 };
 
 CardProductLayout.propTypes = {
-	judul: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
 	price: PropTypes.number.isRequired,
 	path: PropTypes.string.isRequired,
+	category: PropTypes.string,
 };
 
 export default CardProductLayout;

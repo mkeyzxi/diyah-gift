@@ -1,8 +1,8 @@
 export default function Footer() {
 	return (
-		<footer className="w-screen bg-[var(--peachPuff)] border-t-4 border-t-[var(--blackCustom)] pt-8 md:pt-4 text-sm">
-			<div className="max-w-7xl mx-auto px-6 flex justify-between  items-center">
-				<div className="flex flex-wrap justify-between items-start md:items-center w-full">
+		<footer className="w-screen bg-[var(--peachPuff)] border-t-4 border-t-[var(--blackCustom)] pt-8 md:pt-4 text-sm dark:bg-[#CC9F02] dark:text-gray-100 dark:border-t-[#870446]">
+			<div className="max-w-7xl mx-auto px-6 flex justify-between  items-center ">
+				<div className="flex flex-wrap justify-between items-start md:items-center w-full ">
 					{/* Logo and Description */}
 					<div className="w-[230px] mx-auto md:mx-0 p-2 md:order-1 overflow-clip order-3 ">
 						<img
@@ -16,17 +16,17 @@ export default function Footer() {
 
 					{/* Navigation Links */}
 					<div className="w-1/2 md:w-1/4 mb-8 md:mb-0 md:order-2 order-1">
-						<h3 className="font-light text-gray-900 mb-4">Menu</h3>
+						<h3 className="font-light text-gray-900 mb-4 dark:text-[#D8D8D8]">Menu</h3>
 						<ul className="space-y-3">
 							<li>
-								<a href="/" className="text-gray-600 hover:text-rose-500">
+								<a href="/" className="text-gray-600 dark:text-[#D8D8D8] hover:text-rose-500">
 									Beranda
 								</a>
 							</li>
 							<li>
 								<a
 									href="/products"
-									className="text-gray-600 hover:text-rose-500"
+									className="text-gray-600 dark:text-[#D8D8D8] hover:text-rose-500"
 								>
 									Produk
 								</a>
@@ -34,7 +34,7 @@ export default function Footer() {
 							<li>
 								<a
 									href="/contact"
-									className="text-gray-600 hover:text-rose-500"
+									className="text-gray-600 dark:text-[#D8D8D8] hover:text-rose-500"
 								>
 									Kontak
 								</a>
@@ -44,14 +44,14 @@ export default function Footer() {
 
 					{/* Social Media Links */}
 					<div className="w-1/2 md:w-1/3 md:order-3 order-2">
-						<h3 className="font-light text-gray-900 mb-4">Ikuti Kami</h3>
+						<h3 className="font-light text-gray-900 mb-4 dark:text-[#D8D8D8]">Ikuti Kami</h3>
 						<ul className="space-y-3">
 							<li>
 								<a
 									href="https://wa.me/6285342181132"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center text-gray-600 hover:text-green-500"
+									className="flex items-center text-gray-600 dark:text-[#D8D8D8] hover:text-green-500"
 								>
 									<svg
 										className="w-5 h-5 mr-2"
@@ -68,7 +68,7 @@ export default function Footer() {
 									href="https://www.instagram.com/diyah.gift/?hl=en"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center text-gray-600 hover:text-rose-500 "
+									className="flex items-center text-gray-600 dark:text-[#D8D8D8] hover:text-rose-500 "
 								>
 									<svg
 										className="w-5 h-5 mr-2"
@@ -85,7 +85,7 @@ export default function Footer() {
 									href="https://facebook.com/diyahgift"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="flex items-center text-gray-600 hover:text-blue-600"
+									className="flex items-center text-gray-600 dark:text-[#D8D8D8] hover:text-blue-600"
 								>
 									<svg
 										className="w-5 h-5 mr-2"

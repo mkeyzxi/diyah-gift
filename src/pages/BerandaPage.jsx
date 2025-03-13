@@ -8,7 +8,7 @@ const BerandaPage = () => {
 			<IntroLayout textOne="HADIYAH" textTwo="UNTUKMU" />
 			<SalempangLayout />
 			
-			<div className="container mx-auto justify-center items-center space-y-16 md:space-y-10 px-2 md:px-20">
+			<div className="container mx-auto justify-center items-center space-y-16 md:space-y-10 px-2 md:px-20 ">
 			<HeadingTo lineTitle="APA ITU" />
 				<WhatIsLayout />
 			</div>
