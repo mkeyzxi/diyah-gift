@@ -1,23 +1,35 @@
-
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const categoryColors = {
 	selempang: 'bg-[#BD085B]',
-	buket: 'bg-[#FFC403]', 
+	buket: 'bg-[#FFC403]',
 	lainnya: 'bg-[#1F1D1E]',
 };
 
-const CardProductLayout = ({title, price, path, category}) => {
+const CardProductLayout = ({ title, price, path, category }) => {
+	const [isLike, setIsLike] = useState(() => {
+		return localStorage.getItem(`liked-${title}`) === "true";
+	});
+
+	// Menyimpan status "like" ke localStorage setiap kali isLike berubah
+	useEffect(() => {
+		localStorage.setItem(`liked-${title}`, isLike);
+	}, [isLike, title]);
+
+	// Fungsi toggle untuk "like"
+	const handleLike = () => {
+		setIsLike(prev => !prev);
+	};
 	return (
 		<div className="relative md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
 			{/* Badge Kategori */}
 			{category && (
 				<span
-					className={`absolute top-2 right-2 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${
-						categoryColors[category] || 'bg-gray-500'
-					}`}
+					className={`absolute top-1 right-1 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${categoryColors[category] || 'bg-gray-500'
+						}`}
 				>
-					{category}
+					{category.charAt(0).toUpperCase() + category.slice(1)}
 				</span>
 			)}
 
@@ -26,37 +38,27 @@ const CardProductLayout = ({title, price, path, category}) => {
 					<img
 						src={path}
 						alt={`gambar produk ${title}`}
-						className="object-contain w-full h-full"
+						className="object-cover w-full h-full"
 						width="100%"
 						height="100%"
 					/>
 				</div>
 
 				<div className="p-2 space-y-1">
-				<h3 className="font-reguler text-sm text-gray-900 line-clamp-2 min-h-[40px]">
-    {title}
-</h3>
+					<h3 className="font-reguler text-sm text-gray-900 line-clamp-2 min-h-[40px]">
+						{title}
+					</h3>
 					<hr className="mt-2" />
 
 					<div className="flex items-center justify-between">
 						<p className="font-semibold text-sm">RP{price}</p>
 						<div className="flex gap-0">
-							<button
-								className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-								aria-label="Add to cart"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width={24}
-									height={24}
-									viewBox="0 0 24 24"
-									className="text-gray-700"
-								>
-									<path
-										fill="currentColor"
-										fillRule="evenodd"
-										d="M19.285 12.645a3.8 3.8 0 0 0-5.416-5.332q-.288.288-.732.707l-.823.775l-.823-.775q-.445-.42-.733-.707a3.8 3.8 0 0 0-5.374 0c-1.468 1.469-1.485 3.844-.054 5.32l6.984 6.984l6.97-6.972zm-14.75-6.18a5 5 0 0 1 7.072 0q.273.274.707.682q.432-.408.707-.683a5 5 0 0 1 7.125 7.017l-7.125 7.126a1 1 0 0 1-1.414 0L4.48 13.48a5 5 0 0 1 .055-7.017z"
-									></path>
+							<button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Like" onClick={handleLike}>
+								<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 48 48"
+									className={isLike ? "text-pink-500 transition-all" : "text-gray-100"}>
+									<path fill="currentColor" stroke="#364153" strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.5}
+										d="M15 8C8.92487 8 4 12.9249 4 19C4 30 17 40 24 42.3262C31 40 44 30 44 19C44 12.9249 39.0751 8 33 8C29.2797 8 25.9907 9.8469 24 12.6738C22.0093 9.8469 18.7203 8 15 8Z">
+									</path>
 								</svg>
 							</button>
 							<button
@@ -92,3 +94,71 @@ CardProductLayout.propTypes = {
 };
 
 export default CardProductLayout;
+
+// import { useState, useEffect } from 'react';
+// import PropTypes from 'prop-types';
+
+// const categoryColors = {
+//     selempang: 'bg-[#BD085B]',
+//     buket: 'bg-[#FFC403]',
+//     lainnya: 'bg-[#1F1D1E]',
+// };
+
+// const CardProductLayout = ({ title, price, path, category }) => {
+//     // Inisialisasi nilai isLike berdasarkan localStorage
+//     const [isLike, setIsLike] = useState(() => {
+//         return localStorage.getItem(`liked-${title}`) === "true";
+//     });
+
+//     // Menyimpan status "like" ke localStorage setiap kali isLike berubah
+//     useEffect(() => {
+//         localStorage.setItem(`liked-${title}`, isLike);
+//     }, [isLike, title]);
+
+//     // Fungsi toggle untuk "like"
+//     const handleLike = () => {
+//         setIsLike(prev => !prev);
+//     };
+
+//     return (
+//         <div className="relative md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
+//             {category && (
+//                 <span className={`absolute top-1 right-1 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${categoryColors[category] || 'bg-gray-500'}`}>
+//                     {category.charAt(0).toUpperCase() + category.slice(1)}
+//                 </span>
+//             )}
+
+//             <div className="p-0">
+//                 <div className="relative overflow-clip md:h-[150px] h-[130px] object-cover w-full flex items-start justify-center">
+//                     <img src={path} alt={`gambar produk ${title}`} className="object-contain w-full h-full" />
+//                 </div>
+
+//                 <div className="p-2 space-y-1">
+//                     <h3 className="font-reguler text-sm text-gray-900 line-clamp-2 min-h-[40px]">{title}</h3>
+//                     <hr className="mt-2" />
+
+//                     <div className="flex items-center justify-between">
+//                         <p className="font-semibold text-sm">RP{price}</p>
+//                         <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Like" onClick={handleLike}>
+//                             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 48 48"
+//                                 className={isLike ? "text-pink-500" : "text-gray-500"}>
+//                                 <path fill="currentColor" stroke="#364153" strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.5}
+//                                     d="M15 8C8.92487 8 4 12.9249 4 19C4 30 17 40 24 42.3262C31 40 44 30 44 19C44 12.9249 39.0751 8 33 8C29.2797 8 25.9907 9.8469 24 12.6738C22.0093 9.8469 18.7203 8 15 8Z">
+//                                 </path>
+//                             </svg>
+//                         </button>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// CardProductLayout.propTypes = {
+//     title: PropTypes.string.isRequired,
+//     price: PropTypes.number.isRequired,
+//     path: PropTypes.string.isRequired,
+//     category: PropTypes.string,
+// };
+
+// export default CardProductLayout;

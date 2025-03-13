@@ -1,6 +1,94 @@
 {
 	"products": [
 		{
+			"title": "Selempang Samping",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang9.webp",
+			"like": false,
+			"message": "Selempang Samping",
+			"type": "selempang"
+		},
+		{
+			"title": "Salempang Dua Sisi",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang6.webp",
+			"like": false,
+			"message": "Salempang Dua Sisi",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang6.webp",
+			"like": false,
+			"message": "Selempang Samping ( Satu Sisi ) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Pita + Rumbai",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang1.webp",
+			"like": false,
+			"message": "Selempang Dua Sisi + Pita + Rumbai",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi (Kain Satin)",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang10.webp",
+			"like": false,
+			"message": "Selempang Dua Sisi (Kain Satin)",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Duta Guru dan Siswa",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang3.webp",
+			"like": false,
+			"message": "Selempang Duta Guru dan Siswa",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping (Satu Sisi) + Pita",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang2.webp",
+			"like": false,
+			"message": "Selempang Samping (Satu Sisi) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi + Rumbai",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang1.webp",
+			"like": false,
+			"message": "Selempang Dua Sisi + Rumbai",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping Satu Sisi",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang4.webp",
+			"like": false,
+			"message": "Selempang Samping Satu Sisi",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang11.webp",
+			"like": false,
+			"message": "Selempang Samping ( Satu Sisi) + Pita",
+			"type": "selempang"
+		},
+		{
+			"title": "Selempang Dua Sisi",
+			"price": 12000,
+			"path_img": "/image/selempang/Selempang6.webp",
+			"like": false,
+			"message": "Selempang Dua Sisi",
+			"type": "selempang"
+		},
+		{
 			"title": "imageBuket1",
 			"price": 12000,
 			"path_img": "/image/buket/ImageBuket1.webp",
@@ -209,102 +297,6 @@
 			"type": "buket"
 		},
 		{
-			"title": "Selempang Samping",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang9.webp",
-			"like": false,
-			"message": "Selempang Samping",
-			"type": "selempang"
-		},
-		{
-			"title": "Salempang Dua Sisi",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang6.webp",
-			"like": false,
-			"message": "Salempang Dua Sisi",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Samping ( Satu Sisi ) + Pita",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang5.webp",
-			"like": false,
-			"message": "Selempang Samping ( Satu Sisi ) + Pita",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Dua Sisi + Pita + Rumbai",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang1.webp",
-			"like": false,
-			"message": "Selempang Dua Sisi + Pita + Rumbai",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Dua Sisi (Kain Satin)",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang10.webp",
-			"like": false,
-			"message": "Selempang Dua Sisi (Kain Satin)",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Duta Guru dan Siswa",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang3.webp",
-			"like": false,
-			"message": "Selempang Duta Guru dan Siswa",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Samping (Satu Sisi) + Pita",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang2.webp",
-			"like": false,
-			"message": "Selempang Samping (Satu Sisi) + Pita",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Dua Sisi + Rumbai",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang1.webp",
-			"like": false,
-			"message": "Selempang Dua Sisi + Rumbai",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Samping Satu Sisi",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang4.webp",
-			"like": false,
-			"message": "Selempang Samping Satu Sisi",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Samping ( Satu Sisi ) + Pita",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang11.webp",
-			"like": false,
-			"message": "Selempang Samping ( Satu Sisi) + Pita",
-			"type": "selempang"
-		},
-		{
-			"title": "Selempang Dua Sisi",
-			"price": 12000,
-			"path_img": "/image/selempang/Selempang6.webp",
-			"like": false,
-			"message": "Selempang Dua Sisi",
-			"type": "selempang"
-		},
-		{
-			"title": "lainnya",
-			"price": 12000,
-			"path_img": "image/lainnya/lainnya.webp",
-			"like": false,
-			"message": "lainnya",
-			"type": "lainnya"
-		},
-		{
 			"title": "lainnya1",
 			"price": 12000,
 			"path_img": "image/lainnya/lainnya1.webp",
@@ -345,7 +337,7 @@
 			"type": "lainnya"
 		},
 		{
-			"title": "lainnya6",
+			"title": "Foto Polaroid 4R",
 			"price": 12000,
 			"path_img": "image/lainnya/lainnya6.webp",
 			"like": false,
