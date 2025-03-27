@@ -1,7 +1,7 @@
 {
 	"products": [
 		{
-			"title": "Selempang Samping",
+			"title": "Samping",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang9.webp",
 			"like": false,
@@ -9,7 +9,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Salempang Dua Sisi",
+			"title": "Dua Sisi",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang6.webp",
 			"like": false,
@@ -17,7 +17,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"title": "Samping ( Satu Sisi ) + Pita",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang6.webp",
 			"like": false,
@@ -25,7 +25,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Dua Sisi + Pita + Rumbai",
+			"title": "Dua Sisi + Pita + Rumbai",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang1.webp",
 			"like": false,
@@ -33,7 +33,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Dua Sisi (Kain Satin)",
+			"title": "Dua Sisi (Kain Satin)",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang10.webp",
 			"like": false,
@@ -41,7 +41,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Duta Guru dan Siswa",
+			"title": "Duta Guru dan Siswa",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang3.webp",
 			"like": false,
@@ -49,7 +49,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Samping (Satu Sisi) + Pita",
+			"title": "Samping (Satu Sisi) + Pita",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang2.webp",
 			"like": false,
@@ -57,7 +57,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Dua Sisi + Rumbai",
+			"title": "Dua Sisi + Rumbai",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang1.webp",
 			"like": false,
@@ -65,7 +65,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Samping Satu Sisi",
+			"title": "Samping Satu Sisi",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang4.webp",
 			"like": false,
@@ -73,7 +73,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Samping ( Satu Sisi ) + Pita",
+			"title": "Samping ( Satu Sisi ) + Pita",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang11.webp",
 			"like": false,
@@ -81,7 +81,7 @@
 			"type": "selempang"
 		},
 		{
-			"title": "Selempang Dua Sisi",
+			"title": "Dua Sisi",
 			"price": 12000,
 			"path_img": "/image/selempang/Selempang6.webp",
 			"like": false,
