@@ -33,7 +33,7 @@ export default function Navigation() {
             </div>
 
             {/* Menu Items */}
-            <ul className={`md:flex md:items-center md:gap-10 gap-5 absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-[peachPuff] md:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'}`}>
+            <ul className={`md:flex md:items-center md:gap-10 gap-5INFRARED BARRIER OBSTACLE SENSOR HALANGAN RINTANGAN MODULE absolute md:relative top-16 md:top-0 left-0 w-full md:w-auto bg-[peachPuff] md:bg-transparent transition-all duration-300 ease-in-out ${isMenuOpen ? 'block' : 'hidden'}`}>
                 {[
                     { name: "Beranda", path: "/" },
                     { name: "Galeri", path: "/galeri" },
