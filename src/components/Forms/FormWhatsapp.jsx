@@ -1,11 +1,13 @@
 // import PropTypes from 'prop-types';
 import InputField from './InputField';
 // import Button from '../UI/Button';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 const FormWhatsapp = () => {
 	const namaRef = useRef(null);
 	const pesanRef = useRef(null);
-
+	useEffect(() => {
+		namaRef.current.focus();
+	}, []);
 	const handleSubmit = (namaPengirim, pesanPengirim) => {
 		const nama = namaPengirim.current.value;
 		const pesan = pesanPengirim.current.value;

@@ -1,12 +1,14 @@
 // import PropTypes from 'prop-types';
 import InputField from './InputField';
 // import Button from '../UI/Button';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 const FormGmail = () => {
 	const namaRef = useRef(null);
 	const gmailRef = useRef(null);
 	const pesanRef = useRef(null);
-
+	useEffect(() => {
+			namaRef.current.focus();
+		}, []);
 	// const handleSubmit = (namaPengirim, gmailPengirim, pesanPengirim) => {
 	// 	const nama = namaPengirim.current.value.trim();
 	// 	const gmail = gmailPengirim.current.value.trim();
