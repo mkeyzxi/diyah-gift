@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 const Navigasi = ({ name, addClass }) => {
 	return (
 		<div
+		aria-label='Navigation item'
+		
 			className={`relative text-[var(--pinkSecondary)] font-reguler text-sm cursor-pointer ${addClass} px-1 py-2 `}
 		>
 			{name}

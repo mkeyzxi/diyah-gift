@@ -64,6 +64,7 @@ const CardProductLayout = ({ title, price, path, category }) => {
 							<button
 								className="p-2 hover:bg-gray-100 rounded-full transition-colors"
 								aria-label="Contact on WhatsApp"
+								
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
