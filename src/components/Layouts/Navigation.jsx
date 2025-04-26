@@ -148,12 +148,9 @@ export default function Navigation() {
 
             {/* Icons for Desktop View */}
             <div className="hidden md:flex items-center gap-5">
-                <div
-                    className="bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group"
-                    aria-label="Toggle dark mode"
-                >
+              
                     <IconModeNav />
-                </div>
+                
                 <div
                     className="bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group"
                     aria-label="Go to the basket"

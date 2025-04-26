@@ -21,13 +21,13 @@ const IconModeNav = () => {
 	}, [modeDark]);
 
 	return (
-		<div onClick={() => setModeDark(!modeDark)}>
+		<button aria-label="Toggle dark mode" onClick={() => setModeDark(!modeDark)}>
 			{modeDark ? (
 				<svg
-					className="cursor-pointer text-[var(--blackCustom)] group-hover:text-[var(--pink)] group-active:text-[var(--blackCustom)]"
+					className=" bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group cursor-pointer text-[var(--blackCustom)] group-hover:text-[var(--pink)] group-active:text-[var(--blackCustom)]"
 					xmlns="http://www.w3.org/2000/svg"
-					width={24}
-					height={24}
+					width={33}
+					height={33}
 					viewBox="0 0 24 24"
 					aria-label='svg mode'
 					aria-hidden="true"
@@ -82,8 +82,8 @@ const IconModeNav = () => {
 				<svg
   className="cursor-pointer text-[var(--blackCustom)] group-hover:text-[var(--pink)] group-active:text-[var(--blackCustom)]"
   xmlns="http://www.w3.org/2000/svg"
-  width="24"
-  height="24"
+  width="33"
+  height="33"
   viewBox="0 0 24 24"
 >
   <g fill="currentColor" fillOpacity={0}>
@@ -125,7 +125,7 @@ const IconModeNav = () => {
 </svg>
 
 			)}
-		</div>
+		</button>
 	);
 };
 
