@@ -43,54 +43,55 @@
 import Button from "../UI/Button";
 import PropTypes from 'prop-types';
 
-const Explanation = ({className, subExplanation, paragraphExplanation, children}) => {
-  return (
-	<div 
-		className={`flex flex-col items-start w-full justify-center gap-4 h-[300px] md:w-1/2 ${className}`} 
-		aria-labelledby="explanation-title" 
-		aria-describedby="explanation-description"
-		role="region"
-	>
-    <h3 
-    	id="explanation-title" 
-    	className="md:text-2xl text-xl font-semibold"
-    >
-    	{subExplanation}
-    </h3>
-    {children && <div className="w-full">{children}</div>}
-    
-    <p 
-    	id="explanation-description"
-    >
-    	{paragraphExplanation}
-    </p>
-
-    <Button 
-    	label="Lihat Produk" 
-    	svg={
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="12"
-				height="18"
-				viewBox="0 0 12 24"
+const Explanation = ({ className, subExplanation, paragraphExplanation, children }) => {
+	return (
+		<div
+			className={`flex flex-col items-start w-full justify-center gap-4 h-[300px] md:w-1/2 ${className}`}
+			aria-labelledby="explanation-title"
+			aria-describedby="explanation-description"
+			role="region"
+		>
+			<h3
+				id="explanation-title"
+				className="md:text-2xl text-xl font-semibold"
 			>
-				<path
-					fill="currentColor"
-					fillRule="evenodd"
-					d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
-				></path>
-			</svg>
-		}
-	/>
-  </div>
-  )
+				{subExplanation}
+			</h3>
+			{children && <div className="w-full">{children}</div>}
+
+			<p
+				id="explanation-description"
+			>
+				{paragraphExplanation}
+			</p>
+
+			<Button
+				label="Lihat Produk"
+				svg={
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="12"
+						height="18"
+						viewBox="0 0 12 24"
+					>
+						<path
+							fill="currentColor"
+							fillRule="evenodd"
+							d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414"
+						></path>
+					</svg>
+				}
+				 // Example onClick handler
+			/>
+		</div>
+	)
 }
 
 Explanation.propTypes = {
-  subExplanation: PropTypes.string.isRequired,
-  paragraphExplanation: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  children: PropTypes.element,
+	subExplanation: PropTypes.string.isRequired,
+	paragraphExplanation: PropTypes.string.isRequired,
+	className: PropTypes.string,
+	children: PropTypes.element,
 };
 
 export default Explanation;
