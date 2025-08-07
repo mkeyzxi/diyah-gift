@@ -35,7 +35,11 @@ const HeaderNavLayout = ({ headerTitle, children }) => {
 		>
 			{/* Header Title */}
 			<div>
-				<h1 id="headerTitle" className="text-2xl font-medium text-gray-900" aria-label="Header Title">
+				<h1 
+					id="headerTitle" 
+					className={`text-2xl font-medium text-gray-900 dark:text-white `} 
+					aria-label="Header Title"
+				>
 					{headerTitle}
 				</h1>
 			</div>
