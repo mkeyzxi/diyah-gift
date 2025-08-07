@@ -231,7 +231,7 @@ export default function Footer() {
 			{/* Copyright */}
 			<div className="mt-3 py-4 md:order-4 order-3 w-screen bg-[var(--blackCustom)]" id="footerDescription">
 				<p className="text-center text-[10px] md:text-xs text-white dark:text-gray-200">
-					© 2025 Diyah Gift, All Rights Reserved.
+					© 2025 Diyah Gift by Muhammad Makbul N, All Rights Reserved.
 				</p>
 			</div>
 		</footer>

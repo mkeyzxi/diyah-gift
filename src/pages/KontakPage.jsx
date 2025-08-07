@@ -80,7 +80,7 @@ const KontakPage = () => {
 	}, [titleHeaderState]);
 
 	return (
-		<div className="container mx-auto justify-center items-center space-y-16 md:space-y-10 px-2 md:px-20 mt-20 h-screen">
+		<div className="container mx-auto justify-center items-center space-y-5 md:space-y-10 px-2 md:px-20 mt-20 h-screen">
 			<div>
 				<HeaderNavLayout headerTitle={`Hubungi Via ${titleHeaderState}`}>
 					<span
