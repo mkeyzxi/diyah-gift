@@ -32,7 +32,7 @@ import Explanation from './ExplanationLayout';
 
 const WhatIsLayout = () => {
     return (
-        <div className="flex flex-col md:flex-row md:gap-10 w-full justify-between px-3 md:p-0">
+        <div className="flex flex-col md:flex-row md:gap-10 w-full justify-between px-3 md:p-0 mb-14 md:mb-0">
             <Explanation 
                 className="order-2 md:order-0"
                 subExplanation="MEMBERIKAN HADIAH YANG AKAN MENJADI KENANGAN"
@@ -40,7 +40,7 @@ const WhatIsLayout = () => {
                 aria-labelledby="gift-description"
             >
                 <div 
-                    className="w-full md:hidden flex justify-between flex-row gap-2 md:gap-5 bg-slate-400 p-1 md:p-5 order-1 md:order-0" 
+                    className="w-full md:hidden flex justify-between flex-row gap-2 md:gap-5 shadow-md p-1 md:p-5 order-1 md:order-0" 
                     aria-hidden="true"
                 >
                     <div className="w-1/2 bg-slate-900">

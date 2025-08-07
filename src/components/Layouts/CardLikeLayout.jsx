@@ -105,6 +105,7 @@ const CardLikeLayout = ({ title }) => {
 			role="region"
 			aria-labelledby={`section-title-${title}`}
 		>
+			
 			<div className="flex justify-between items-center p-2">
 				<h2
 					id={`section-title-${title}`}

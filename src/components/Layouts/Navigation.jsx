@@ -31,7 +31,7 @@ export default function Navigation() {
             <div className="md:hidden flex items-center gap-4">
               
                 <div
-                    className="bg-[var(--pinkBackground)] !p-1 rounded-full shadow-custom hover:scale-105 transition-all hover:bg-[var(--blackCustom)] active:bg-[var(--pink)] active:scale-95 hover:text-[var(--pink)] group"
+                    className=""
                     aria-label="Go to the basket"
                 >
                     

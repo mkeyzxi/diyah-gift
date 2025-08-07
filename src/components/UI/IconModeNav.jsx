@@ -21,14 +21,14 @@ const IconModeNav = () => {
 			className="md:p-1 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center transition-all duration-200
 				bg-[var(--pinkBackground)] text-[var(--blackCustom)]
 				hover:scale-105 hover:bg-[var(--blackCustom)] hover:text-[var(--pink)]
-				active:scale-95 active:bg-[var(--pink)]"
+				active:scale-95 active:bg-[var(--pink)]   group"
 		>
 			{modeDark ? (
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					viewBox="0 0 24 24"
 					fill="currentColor"
-					className="w-6 h-6 md:w-8 md:h-8"
+					className="w-6 h-6 md:w-8 md:h-8 "
 					aria-hidden="true"
 				>
 					<g fill="currentColor" fillOpacity={0}>
