@@ -100,19 +100,20 @@
 
 import { useState } from 'react';
 import logo from '../../assets/logo.png';
-import { Link } from 'react-router';
+import { Link, useLocation} from 'react-router';
 import IconModeNav from '../UI/IconModeNav';
 
 export default function Navigation() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+	// const params = useParams();
+	const { pathname }  = useLocation();
 	const menuItems = [
 		{ name: 'Beranda', path: '/' },
 		{ name: 'Galeri', path: '/galeri' },
 		{ name: 'Kontak', path: '/kontak' },
 	];
+	// console.log(params);
 
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50 bg-[peachPuff] dark:bg-[#CC9F02] text-[var(--blackCustom)] dark:text-gray-100 shadow-md">
@@ -129,16 +130,25 @@ export default function Navigation() {
 				{/* Desktop Menu */}
 				<ul className="hidden md:flex items-center gap-8 text-md">
 					{menuItems.map((item, index) => (
-						<li key={index} className="relative group">
+						<li key={index} className="relative group py-1">
 							<Link
 								to={item.path}
-								className="transition-colors duration-300 text-[var(--blackCustom)] dark:text-gray-100 hover:text-[var(--pink)]"
+								className={`transition-colors duration-300 text-[var(--blackCustom)] dark:text-gray-100 hover:text-[var(--pink)] ` 
+
+
+								}
+								
+								
 							>
 								{item.name}
+								{console.log(pathname)}
 							</Link>
-							<span className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[var(--blackCustom)] dark:bg-gray-100 transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+							<span className={`absolute bottom-0 left-1/2 w-0 h-[4px] bg-[var(--blackCustom)] dark:bg-gray-100 transition-all duration-300 group-hover:w-full group-hover:left-0 ${item.path === pathname ? 'w-full !left-0 !bg-[var(--pink)]' : 'w-0'}`}></span>
+							
 						</li>
-					))}
+						
+						
+					)) }
 				</ul>
 
 				{/* Desktop Icons */}
