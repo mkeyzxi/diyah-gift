@@ -25,14 +25,14 @@ const HeadingTo = ({ lineTitle }) => {
 		>
 			<h2
 				id="headingTitle"
-				className="text-md font-extrabold whitespace-nowrap text-[var(--blackCustom)]"
+				className="text-md font-extrabold dark:text-[#BD085B] whitespace-nowrap text-[var(--blackCustom)]py-5 sm:py-10 md:py-0 "
 				aria-label="Section title"
 			>
 				{lineTitle}
 			</h2>
 			<hr
 				id="headingDescription"
-				className="w-full text-[var(--blackCustom)] rounded-full"
+				className="w-full text-[var(--blackCustom)] rounded-full dark:text-[#870446]"
 				aria-hidden="true"
 			/>
 		</div>

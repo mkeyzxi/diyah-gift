@@ -111,7 +111,7 @@ const CardLikeLayout = ({ title }) => {
 					id={`section-title-${title}`}
 					className="text-lg font-bold text-gray-800"
 				>
-					{title}
+					{title ? title : " "}
 				</h2>
 				<button
 					onClick={toggleLike}
