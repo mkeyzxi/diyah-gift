@@ -18,10 +18,10 @@ const IconModeNav = () => {
 		<button
 			aria-label="Toggle dark mode"
 			onClick={() => setModeDark(!modeDark)}
-			className="md:p-1 w-6 h-6 md:w-8 md:h-8 rounded-full flex items-center justify-center transition-all duration-200
+			className="md:p-1 w-7 h-7 md:w-8 md:h-8 rounded-full flex items-center justify-center transition-all duration-200
 				bg-[var(--pinkBackground)] text-[var(--blackCustom)]
 				hover:scale-105 hover:bg-[var(--blackCustom)] hover:text-[var(--pink)]
-				active:scale-95 active:bg-[var(--pink)]   group"
+				active:scale-95 active:bg-[var(--blackCustom)]  group dark:bg-[var(--blackCustom)] dark:text-[var(--pink)]"
 		>
 			{modeDark ? (
 				<svg
