@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Bottom Navigation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --pink: #BD085B;
+      --blackCustom: #1F1D1E;
+      --yellow: #FFC403;
+      --pinkSecondary: #FF6CAA;
+      --pinkBackground: #e9d1db;
+      --pinkBackgroundOpacity: rgba(255, 105, 188, 0.45);
+      --peachPuff: #F9EAE5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --pink: #FF6CAA;
+        --blackCustom: #e5e5e5;
+        --yellow: #FFD95A;
+        --pinkSecondary: #BD085B;
+        --pinkBackground: #1F1D1E;
+        --pinkBackgroundOpacity: rgba(189, 8, 91, 0.3);
+        --peachPuff: #2a2a2a;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[var(--peachPuff)] dark:bg-[var(--pinkBackground)] min-h-screen flex items-center justify-center">
+
+  <h1 class="text-2xl font-bold text-[var(--blackCustom)] dark:text-[var(--yellow)]">
+    Modern Bottom Navigation
+  </h1>
+
+  <!-- Bottom Navigation -->
+  <nav
+    class="fixed bottom-4 left-1/2 -translate-x-1/2 w-[98%] max-w-md rounded-2xl bg-transparent backdrop-blur-2xl shadow-lg border border-gray-200 dark:border-[var(--pinkBackgroundOpacity)]">
+    <ul class="flex justify-around items-center h-16">
+
+      <!-- Home -->
+      <li
+        class="flex flex-col items-center text-gray-600 hover:text-[var(--pink)] dark:text-gray-300 dark:hover:text-[var(--pinkSecondary)] transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-house">
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        </svg>
+        <!-- <span class="text-xs mt-1">Home</span> -->
+      </li>
+
+      <!-- Search -->
+      <li
+        class="flex flex-col items-center relative dark:bg-[#CC9F02] p-4 rounded-full text-gray-600 hover:text-[var(--pink)] dark:text-gray-300 dark:hover:text-[var(--pinkSecondary)] transition-colors duration-300">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-image-icon lucide-book-image"><path d="m20 13.7-2.1-2.1a2 2 0 0 0-2.8 0L9.7 17"/><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/><circle cx="10" cy="8" r="2"/></svg>
+        <!-- <span class="text-xs mt-1">Search</span> -->
+      </li>
+
+      <!-- Profile -->
+      <li
+        class="flex flex-col items-center text-gray-600 hover:text-[var(--pink)] dark:text-gray-300 dark:hover:text-[var(--pinkSecondary)] transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-user">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <!-- <span class="text-xs mt-1">Profile</span> -->
+      </li>
+
+    </ul>
+  </nav>
+
+</body>
+
+</html>
