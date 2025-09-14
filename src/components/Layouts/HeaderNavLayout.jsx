@@ -37,7 +37,7 @@ const HeaderNavLayout = ({ headerTitle, children }) => {
 			<div>
 				<h1 
 					id="headerTitle" 
-					className={`text-2xl font-medium text-gray-900 dark:text-white `} 
+					className={`text-2xl font-medium text-gray-900 dark:text-white transition-all`} 
 					aria-label="Header Title"
 				>
 					{headerTitle}

@@ -63,7 +63,7 @@
 
 // export default KontakPage;
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
 import FormWhatsapp from '../components/Forms/FormWhatsapp';
 import FormGmail from '../components/Forms/FormGmail';
@@ -73,6 +73,9 @@ const KontakPage = () => {
 		// Ambil nilai terakhir dari localStorage atau default ke 'Whatsapp'
 		return localStorage.getItem('selectedForm') || 'Whatsapp';
 	});
+
+	const headForTitle = useRef(document.querySelector('title'));
+	headForTitle.current.text = 'Kontak | diyah.gift';
 
 	// Simpan pilihan ke localStorage setiap kali berubah
 	useEffect(() => {
