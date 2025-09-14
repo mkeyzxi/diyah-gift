@@ -47,7 +47,7 @@ const IntroLayout = ({ textOne, textTwo }) => {
 
 			<div className="w-14 absolute z-1 overflow-hidden lg:w-[230px] lg:top-[30%]">
 				<img
-					src="/src/assets/model.jpg"
+					src="/model.jpg"
 					className="scale-130 md:scale-110 lg:scale-100 rounded-xs"
 					alt="Foto Wisuda dari Suci Wahyuni, S.E"
 					height="100%"

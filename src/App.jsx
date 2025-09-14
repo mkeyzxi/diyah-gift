@@ -16,7 +16,7 @@ function App() {
 			<Routes>
 				
 				<Route path="/" element={<BerandaPage />} />
-				<Route path="/galeri" element={<GaleriPage />} />
+				<Route path="/galeri" element={<GaleriPage  />} />
 				<Route path="/kontak" element={<KontakPage />} />
 				<Route path="/testing" element={<CardLikeLayout />} />
 				{/* produk slut */}

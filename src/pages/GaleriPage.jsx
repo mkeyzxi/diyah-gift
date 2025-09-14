@@ -97,7 +97,7 @@
 
 import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
-
+import SkeletonLoading from '../components/Layouts/SkeletonLoading';
 const CardProductLayout = lazy(() => import('../components/Layouts/CardProductLayout'));
 
 const GaleriPage = () => {
@@ -107,6 +107,9 @@ const GaleriPage = () => {
 
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 18;
+
+    const headForTitle = useRef(document.querySelector('title'));
+	headForTitle.current.text = 'Galery | diyah.gift';
 
     useEffect(() => {
         const fetchData = async () => {
@@ -148,7 +151,7 @@ const GaleriPage = () => {
 
     return (
         <div className="container mx-auto justify-center items-center space-y-16 md:space-y-10 px-2 md:px-20 mt-20">
-            <HeaderNavLayout headerTitle={`Menampilkan ${titleHeaderState.replace(/^./, c => c.toUpperCase())}`}>
+            <HeaderNavLayout  headerTitle={`Menampilkan ${titleHeaderState.replace(/^./, c => c.toUpperCase())}`}>
                 {["semua", "selempang", "buket", "lainnya"].map((type) => (
                     <span
                         key={type}
@@ -161,9 +164,10 @@ const GaleriPage = () => {
             </HeaderNavLayout>
 
             {dataProducts.length === 0 ? (
-                <div className="text-center animate-pulse">Loading produk...</div>
+                // <div className="text-center animate-pulse">Loading produk...</div>
+                <SkeletonLoading />
             ) : (
-                <Suspense fallback={<div className="text-center animate-pulse">Memuat produk...</div>}>
+                <Suspense fallback={<div className="text-center animate-pulse"><SkeletonLoading /></div>}>
                     <div className="flex flex-wrap gap-3 md:gap-5 justify-center items-center">
                         {currentItems.map((e, i) => (
                             <CardProductLayout

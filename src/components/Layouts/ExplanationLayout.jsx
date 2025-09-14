@@ -46,7 +46,7 @@ import PropTypes from 'prop-types';
 const Explanation = ({ className, subExplanation, paragraphExplanation, children }) => {
 	return (
 		<div
-			className={`flex flex-col items-start w-full justify-center gap-4 h-[300px] md:w-1/2 ${className}`}
+			className={`flex flex-col items-start w-full justify-center gap-5 lg:gap-5 h-[300px] md:w-1/2 ${className}`}
 			aria-labelledby="explanation-title"
 			aria-describedby="explanation-description"
 			role="region"
@@ -60,7 +60,7 @@ const Explanation = ({ className, subExplanation, paragraphExplanation, children
 			{children && <div className="w-full">{children}</div>}
 
 			<p
-				id="explanation-description"
+				id="explanation-description" className="lg:mb-10"
 			>
 				{paragraphExplanation}
 			</p>

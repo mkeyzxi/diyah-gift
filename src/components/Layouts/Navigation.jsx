@@ -1,6 +1,6 @@
 
 // import { useState } from 'react';
-import logo from '../../assets/logo.png';
+import logo from '/logo.png';
 import { Link, useLocation } from 'react-router';
 import IconModeNav from '../UI/IconModeNav';
 // import { useEffect } from 'react';		
@@ -44,7 +44,7 @@ export default function Navigation() {
 				</div>
 
 				{/* Desktop Menu */}
-				<ul className="hidden md:flex items-center gap-8 text-md">
+				<ul className="hidden md:flex items-center gap-10 text-md">
 					{menuItems.map((item, index) => (
 						<li key={index} className="relative group py-1">
 							<Link
@@ -57,7 +57,7 @@ export default function Navigation() {
 
 							>
 								{item.name}
-								{console.log(pathname)}
+								{/* {console.log(pathname)} */}
 							</Link>
 							<span className={`absolute bottom-0 left-1/2 w-0 h-[4px] bg-[var(--blackCustom)] dark:bg-gray-100 transition-all duration-300 group-hover:w-full group-hover:left-0 ${item.path === pathname ? 'w-full !left-0 !bg-[var(--pink)]' : 'w-0'}`}></span>
 

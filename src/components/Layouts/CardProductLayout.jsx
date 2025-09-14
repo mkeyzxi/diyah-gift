@@ -22,7 +22,7 @@ const CardProductLayout = ({ title, price, path, category }) => {
 
 	return (
 		<div className="relative md:min-w-[185px] max-w-[165px] overflow-hidden bg-white dark:bg-[#1A1A1A] rounded-lg border border-gray-200 dark:border-[#870446] shadow-sm">
-			{/* Badge Kategori */}
+			{/* gadge kategori */}
 			{category && (
 				<span
 					className={`absolute top-1 right-1 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${categoryColors[category] || 'bg-gray-500 dark:bg-gray-600'}`}
@@ -49,7 +49,7 @@ const CardProductLayout = ({ title, price, path, category }) => {
 					<hr className="mt-2 border-gray-200 dark:border-[#870446]" />
 
 					<div className="flex items-center justify-between">
-						<p className="font-semibold text-sm text-gray-800 dark:text-gray-200">RP{price}</p>
+						<p className="font-semibold text-sm text-gray-800 dark:text-gray-200">{price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' }).slice(0, -3)}</p>
 						<div className="flex gap-0">
 							<button className="p-2 hover:bg-gray-100 dark:hover:bg-[#333333] rounded-full transition-colors" aria-label="Like" onClick={handleLike}>
 								<svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 48 48"
@@ -92,72 +92,3 @@ CardProductLayout.propTypes = {
 };
 
 export default CardProductLayout;
-
-
-// import { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
-
-// const categoryColors = {
-//     selempang: 'bg-[#BD085B]',
-//     buket: 'bg-[#FFC403]',
-//     lainnya: 'bg-[#1F1D1E]',
-// };
-
-// const CardProductLayout = ({ title, price, path, category }) => {
-//     // Inisialisasi nilai isLike berdasarkan localStorage
-//     const [isLike, setIsLike] = useState(() => {
-//         return localStorage.getItem(`liked-${title}`) === "true";
-//     });
-
-//     // Menyimpan status "like" ke localStorage setiap kali isLike berubah
-//     useEffect(() => {
-//         localStorage.setItem(`liked-${title}`, isLike);
-//     }, [isLike, title]);
-
-//     // Fungsi toggle untuk "like"
-//     const handleLike = () => {
-//         setIsLike(prev => !prev);
-//     };
-
-//     return (
-//         <div className="relative md:min-w-[185px] max-w-[165px] overflow-hidden bg-white rounded-lg border border-gray-200 shadow-sm">
-//             {category && (
-//                 <span className={`absolute top-1 right-1 px-2 py-1 text-xs font-semibold text-white rounded-md z-1 ${categoryColors[category] || 'bg-gray-500'}`}>
-//                     {category.charAt(0).toUpperCase() + category.slice(1)}
-//                 </span>
-//             )}
-
-//             <div className="p-0">
-//                 <div className="relative overflow-clip md:h-[150px] h-[130px] object-cover w-full flex items-start justify-center">
-//                     <img src={path} alt={`gambar produk ${title}`} className="object-contain w-full h-full" />
-//                 </div>
-
-//                 <div className="p-2 space-y-1">
-//                     <h3 className="font-reguler text-sm text-gray-900 line-clamp-2 min-h-[40px]">{title}</h3>
-//                     <hr className="mt-2" />
-
-//                     <div className="flex items-center justify-between">
-//                         <p className="font-semibold text-sm">RP{price}</p>
-//                         <button className="p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Like" onClick={handleLike}>
-//                             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 48 48"
-//                                 className={isLike ? "text-pink-500" : "text-gray-500"}>
-//                                 <path fill="currentColor" stroke="#364153" strokeLinecap="round" strokeLinejoin="round" strokeWidth={3.5}
-//                                     d="M15 8C8.92487 8 4 12.9249 4 19C4 30 17 40 24 42.3262C31 40 44 30 44 19C44 12.9249 39.0751 8 33 8C29.2797 8 25.9907 9.8469 24 12.6738C22.0093 9.8469 18.7203 8 15 8Z">
-//                                 </path>
-//                             </svg>
-//                         </button>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-// CardProductLayout.propTypes = {
-//     title: PropTypes.string.isRequired,
-//     price: PropTypes.number.isRequired,
-//     path: PropTypes.string.isRequired,
-//     category: PropTypes.string,
-// };
-
-// export default CardProductLayout;
