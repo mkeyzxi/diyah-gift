@@ -99,6 +99,8 @@ import { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
 import SkeletonLoading from '../components/Layouts/SkeletonLoading';
 const CardProductLayout = lazy(() => import('../components/Layouts/CardProductLayout'));
+import useScroll from '../components/Hooks/useScroll';
+
 
 const GaleriPage = () => {
     const [titleHeaderState, setTitleHeaderState] = useState('semua');
@@ -110,7 +112,9 @@ const GaleriPage = () => {
 
     const headForTitle = useRef(document.querySelector('title'));
 	headForTitle.current.text = 'Galery | diyah.gift';
-
+    
+    // untuk scroll ketika pertama kali di load
+    const scrollToTop = useScroll();
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -134,6 +138,8 @@ const GaleriPage = () => {
         };
 
         fetchData();
+        scrollToTop;
+        
     }, []);
 
     useEffect(() => {

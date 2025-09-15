@@ -2,11 +2,17 @@ import HeadingTo from '../components/Layouts/HeadingTo';
 import IntroLayout from '../components/Layouts/IntroLayout';
 import SalempangLayout from '../components/Layouts/SalempangLayout';
 import WhatIsLayout from '../components/Layouts/WhatIsLayout';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
+import useScroll from '../components/Hooks/useScroll';
 
 const BerandaPage = () => {
 	const headForTitle = useRef(document.querySelector('title'));
 	headForTitle.current.text = 'Beranda | diyah.gift';
+	const scrollToTop = useScroll();
+
+	useEffect(() => {
+		scrollToTop;
+	}, []);
 	return (
 		<div className="flex flex-col">
 			<IntroLayout textOne="HADIYAH" textTwo="UNTUKMU" />

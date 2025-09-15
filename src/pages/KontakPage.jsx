@@ -67,6 +67,8 @@ import { useState, useEffect, useRef } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
 import FormWhatsapp from '../components/Forms/FormWhatsapp';
 import FormGmail from '../components/Forms/FormGmail';
+import useScroll from '../components/Hooks/useScroll';
+
 
 const KontakPage = () => {
 	const [titleHeaderState, setTitleHeaderState] = useState(() => {
@@ -76,6 +78,10 @@ const KontakPage = () => {
 
 	const headForTitle = useRef(document.querySelector('title'));
 	headForTitle.current.text = 'Kontak | diyah.gift';
+	const scrollToTop = useScroll();
+	useEffect(() => {
+		scrollToTop;
+	}, []);
 
 	// Simpan pilihan ke localStorage setiap kali berubah
 	useEffect(() => {
