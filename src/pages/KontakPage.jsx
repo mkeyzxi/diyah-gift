@@ -67,6 +67,8 @@ import { useState, useEffect, useRef } from 'react';
 import HeaderNavLayout from '../components/Layouts/HeaderNavLayout';
 import FormWhatsapp from '../components/Forms/FormWhatsapp';
 import FormGmail from '../components/Forms/FormGmail';
+import useScroll from '../components/Hooks/useScroll';
+
 
 const KontakPage = () => {
 	const [titleHeaderState, setTitleHeaderState] = useState(() => {
@@ -76,6 +78,10 @@ const KontakPage = () => {
 
 	const headForTitle = useRef(document.querySelector('title'));
 	headForTitle.current.text = 'Kontak | diyah.gift';
+	const scrollToTop = useScroll();
+	useEffect(() => {
+		scrollToTop;
+	}, []);
 
 	// Simpan pilihan ke localStorage setiap kali berubah
 	useEffect(() => {
@@ -109,10 +115,7 @@ const KontakPage = () => {
 				<div className="flex flex-col justify-center items-center gap-2 w-full md:w-1/2 mx-auto text-center">
 					<h2 className="text-2xl font-medium text-gray-900 dark:text-slate-100" >Kontak</h2>
 					<p>
-						Jika Anda memiliki saran atau masukan untuk meningkatkan pengalaman
-						bersama diyah.gift jangan malu-malu untuk kirimkan yah, kami sangat
-						berterima kasih atas masukan tersebut. Tidak hanya saran, kami juga
-						menerima pemesanan kok, jadi tunggu apa lagi.
+						Diyah.gift mengundang Anda untuk memberikan saran atau masukan demi meningkatkan pengalaman bersama, dan mereka sangat berterima kasih atas input Anda. Selain itu, mereka juga menerima pemesanan.
 					</p>
 				</div>
 
